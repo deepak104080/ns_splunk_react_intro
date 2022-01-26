@@ -1,0 +1,17 @@
+.course_header {
+    color: red !important;
+}
+.trainer_header {
+    color: seagreen;
+}
+
+.logo_image {
+    width: 200px;
+    height: auto;
+}
+
+.width-500 {
+    width: 500px;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
