@@ -7,9 +7,10 @@ const Header = (props) => {
     return(
         <>
             <div>Header</div>
-            <div>{menuitem1}</div>
-            <div>{menuitem2}</div>
-            <div>{menuitem3}</div>
+            <span>{menuitem1}</span>
+            <span>{menuitem2}</span>
+            <span>{menuitem3}</span>
+            <br/>
         </>
     );
 }

@@ -10,7 +10,7 @@ function App() {
     const menu1 = 'Home';
     const menu2 = 'About';
     const menu3 = 'Contact';
-    const companyname = 'Newton School'
+    const companyname = 'Newton School';
     return (
         <div className="App" >
             <Container className="bg-info">
@@ -29,3 +29,16 @@ export default App;
 // State and Props - varibales - Object
 // State - maintain varibale state inside a component - update - not read only - mutable
 // props - used to transfer data to child component - no update - read only - immutable
+
+
+// git clone <link>
+// +
+// npm install
+
+// npm start
+
+// =
+// npm create-
+// npm start
+
+// npm init - blank project

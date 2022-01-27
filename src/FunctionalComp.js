@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import './css/functional.css';
 import image1 from './assets/ns.png';
 import { Button, Alert } from 'react-bootstrap';
@@ -7,6 +7,23 @@ const FunctionalComp = () => {
     const name = 'Deepak Kumar';
     const location = 'GGN';
     const job = 'IT';
+    const [count, setCount] = useState(0);
+
+    const increaseCount = () => {
+        setCount(count => count+1);
+    }
+
+    const decreaseCount = () => {
+        setCount(count => count-1);
+    }
+
+    // const renderApiHtml = () => {
+    //     let temp = 1;
+    //     return (
+    //         <div>{temp}</div>
+    //     )
+    // }
+    //Hook - useState
 
     return (
         <Fragment>
@@ -15,12 +32,16 @@ const FunctionalComp = () => {
             <img src={image1} className="logo_image" />
             <p className="trainer_header">{name + name} lives in {location} and works in {job}</p>
 
-            <Button variant="success">Click here</Button>
-            <button className="btn btn-primary">Clik here for normal button</button>
+            
+            {/* {renderApiHtml} */}
 
             <Alert variant="danger" className="width-500">
                 Red Alert...
             </Alert>
+
+            <p>Functional Count = {count}</p>
+            <Button variant="success" onClick={increaseCount}>Increase Count</Button>
+            <button className="btn btn-primary" onClick={decreaseCount}>Decrease Count</button>
         </Fragment>
     )
 }
