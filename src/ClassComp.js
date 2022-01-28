@@ -1,6 +1,8 @@
 // import { Button } from 'bootstrap';
 import React from 'react';
 import {Button} from 'react-bootstrap';
+import Circle from './Circle';
+import Circle_Lift_State from './Circle_Lift_State';
 
 class ClassComp extends React.Component {
     constructor() {
@@ -52,6 +54,8 @@ class ClassComp extends React.Component {
                 <div>Class Count = {this.state.count}</div>
                 <Button variant="primary" onClick={this.increaseCount}>Increase</Button>
                 <Button variant="primary" onClick={this.decreaseCount}>Decrease</Button>
+                <Circle/>
+                <Circle_Lift_State />
             </>
         )
     }
