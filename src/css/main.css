@@ -1,7 +1,12 @@
 .App {
-    text-align: center;
-    background-color: #383f47;
-    min-height: 100vh;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  text-align: center;
+  background-color: #383f47;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+  .font-12 {
+    font-size: 12px;
   }
+

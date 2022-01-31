@@ -1,3 +1,11 @@
+## ############## NS DOCUMENTATION ###########
+Public APIs for Testing
+https://apipheny.io/free-api/
+https://rapidapi.com/collection/list-of-free-apis
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+
+
+## ############## REACT DOCUMENTATION ###########
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
