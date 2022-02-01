@@ -8,6 +8,7 @@ import Main from './Main';
 import Launchpad from './Launchpad';
 import Fees from './Fees';
 import {Container} from 'react-bootstrap';
+import NotFound from './NotFound';
 
 function App() {
     const menu1 = 'Home';
@@ -21,17 +22,15 @@ function App() {
                 {/* <div className="container bg-info"> */}
                 {/* </div> */}
                     <Header menuitem1={menu1} menuitem2={menu2} menuitem3={menu3}/>
-                    <a href="/home">Home</a>
-                    <a href="/launchpad">Launchpad</a>
-                    <a href="/fees">Fees</a>
+                    
 
 
                     <Routes>
-                        
                         <Route path="/launchpad" element={<Launchpad />}/>
                         <Route path="/fees" element={<Fees />}/>
                         <Route path="/home" element={<Main companyName = {companyname}/>}/>
-                        {/* <Route path="/" component={}/> */}
+                        <Route path="/" element={<Main companyName = {companyname}/>}/>
+                        <Route path="*" element={<NotFound/>}/>
                     </Routes>
 
 

@@ -11,6 +11,9 @@ const Header = (props) => {
             <span>{menuitem2}</span>
             <span>{menuitem3}</span>
             <br/>
+            <a href="/home">Home</a> {' '}
+            <a href="/launchpad">Launchpad</a>{' '}
+            <a href="/fees">Fees</a>{' '}
         </div>
     );
 }
