@@ -9,7 +9,7 @@ const Childcircle4 = (props) => {
     return (
         <>
             <Button onClick={submitRadius}>Increase Radius by 5</Button>
-            <p>Area = {radiusVal * radiusVal}</p>
+            <p>Square of Radius = {radiusVal * radiusVal}</p>
         </>
     )
 }

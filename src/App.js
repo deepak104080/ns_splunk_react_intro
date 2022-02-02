@@ -9,6 +9,7 @@ import Launchpad from './Launchpad';
 import Fees from './Fees';
 import {Container} from 'react-bootstrap';
 import NotFound from './NotFound';
+import ClassCompDetail from './ClassCompDetail';
 
 function App() {
     const menu1 = 'Home';
@@ -29,6 +30,7 @@ function App() {
                         <Route path="/launchpad" element={<Launchpad />}/>
                         <Route path="/fees" element={<Fees />}/>
                         <Route path="/home" element={<Main companyName = {companyname}/>}/>
+                        <Route path="/classcompdetail" element= {<ClassCompDetail />} />
                         <Route path="/" element={<Main companyName = {companyname}/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
