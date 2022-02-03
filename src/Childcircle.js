@@ -9,7 +9,7 @@ const Childcircle = (props) => {
     }
     return (
         <>
-            <Button onClick={submitRadius}>Increase Radis by 5</Button>
+            <Button variant="success" onClick={submitRadius}>Increase Radius by 5</Button>
         </>
     )
 }

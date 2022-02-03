@@ -12,7 +12,9 @@ const Assignment_Toggle2 = () => {
 
     return (
         <Fragment>
-            <Button variant="primary" onClick={showPara}>Toggle Box using Class</Button>
+            <Button variant="primary" onClick={showPara}>Toggle Box using CSS Class</Button>
+            <br></br>
+            <br></br>
             <div className={showFlag ? 'redBox' : 'greenBox'} onClick={showPara}>text box</div>
         </Fragment>
     )

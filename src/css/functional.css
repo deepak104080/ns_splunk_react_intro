@@ -24,13 +24,13 @@
 }
 .greenBox {
     background-color: green;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
 }
 .redBox {
     background-color: red;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
 }

@@ -9,14 +9,19 @@ const Main = (props) => {
     return(
         <>
         <Row>
-            <Col xs={4} className="bg-warning">
+            <Col xs={4} className="bg-light">
                 <FunctionalComp/>
             </Col>
-            <Col xs={4} className="bg-warning">
+            <Col xs={4} className="bg-light border-end border-start">
                 <ClassComp />
             </Col>
-            <Col xs={4} className="bg-warning">
+            <Col xs={4} className="bg-light">
                 <ApiFunction />
+            </Col>
+        </Row>
+        <Row>
+            <Col xs={12} className="bg-info border-bottom">
+                This is a functional component.
             </Col>
         </Row>
         </>

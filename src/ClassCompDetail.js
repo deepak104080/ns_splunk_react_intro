@@ -1,4 +1,5 @@
 import React from 'react';
+import {Row, Col} from 'react-bootstrap';
 
 class ClassCompDetail extends React.Component  {
     constructor() {
@@ -39,10 +40,19 @@ class ClassCompDetail extends React.Component  {
         console.log('Inside render');
         return(
             <>
-                <p>This is a class component.</p>
-                <button onClick={this.updateCount}>Update Count</button>
-                <button onClick={this.deletecomp}>Delete comp</button>
-                {/* <h1>{abc}</h1> */}
+            <Row>
+                <Col xs={12} className="bg-light">
+                    <p>This is a class component.</p>
+                    <button onClick={this.updateCount}>Update Count</button>
+                    <button onClick={this.deletecomp}>Delete comp</button>
+                    {/* <h1>{abc}</h1> */}
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} className="bg-info border-bottom">
+                    This is a class component.
+                </Col>
+            </Row>
             </>
         );
     }

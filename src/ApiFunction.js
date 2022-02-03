@@ -23,8 +23,9 @@ const ApiFunction = (props) => {
     return(
         <>
         <Row>
-            <Col xs={12} className="bg-danger">
+            <Col xs={12}>
                 {/* <Button variant="primary">Call API</Button> */}
+                <br></br>
                 <button className="btn btn-primary" onClick={callApi}>Call API</button>
                 <br></br>
                 <br></br>

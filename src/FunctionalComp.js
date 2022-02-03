@@ -47,7 +47,7 @@ const FunctionalComp = () => {
 
             <p>Functional Count = {count}</p>
             <Button variant="success" onClick={increaseCount}>Increase Count</Button>
-            <button className="btn btn-primary" onClick={decreaseCount}>Decrease Count</button>
+            <button className="btn btn-warning" onClick={decreaseCount}>Decrease Count</button>
             <br></br>
             ----------------------------------
             <br></br>

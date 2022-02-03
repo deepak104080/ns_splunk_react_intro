@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -16,10 +16,9 @@ code {
   text-align: center;
   background-color: #c5c8cc;
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
-}
-
+} */
 
 /* .App-logo {
   height: 40vmin;
@@ -51,3 +50,45 @@ code {
     transform: rotate(360deg);
   }
 } */
+
+
+.App {
+  text-align: center;
+  background-color: #383f47;
+  /* background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%); */
+  /* background: linear-gradient(120deg, #ecf3ad 0%, #9c2169 100%), linear-gradient(120deg, #b7d0f5 0%, #72f547 100%), linear-gradient(130deg, #00F0FF 0%, #000000 100%), radial-gradient(110% 140% at 15% 90%, #ffffff 0%, #5a81eb 100%), radial-gradient(100% 100% at 50% 0%, #e4b4fa 0%, #00FFE0 100%), radial-gradient(100% 100% at 50% 0%, #00FFE0 0%, #7300A9 80%), linear-gradient(30deg, #7ca304 0%, #453194 100%);
+  background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal; */
+  background: linear-gradient(125deg, #FDFF9C 0%, #0500FF 100%), linear-gradient(180deg, #D3D3D3 0%, #161616 100%), linear-gradient(310deg, #00F0FF 0%, #00F0FF 20%, #0017E3 calc(20% + 1px), #0017E3 40%, #000F8F calc(40% + 1px), #000F8F 70%, #00073F calc(70% + 1px), #00073F 100%), linear-gradient(285deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%);
+  background-blend-mode: overlay, overlay, exclusion, normal;
+  min-height: 100vh;
+  font-size: calc(10px + 1vmin);
+  color: #383f47;
+}
+
+/* .header-div {
+  min-height: 150px;
+}
+.header-group {
+  margin-top: 20px;
+} */
+
+.app-container {
+  box-shadow: 0px 0px 10px #161616;
+}
+
+.logo {
+  display: flex;
+  height: 80px;
+  width: auto;
+}
+
+.header-menu {
+  border: 1px solid #383f47;
+  background-color: rgb(241, 204, 235);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}

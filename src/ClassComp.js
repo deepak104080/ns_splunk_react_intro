@@ -1,6 +1,6 @@
 // import { Button } from 'bootstrap';
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import {Button, Row, Col} from 'react-bootstrap';
 import Circle from './Circle';
 import Circle_Lift_State from './Circle_Lift_State';
 
@@ -50,12 +50,18 @@ class ClassComp extends React.Component {
     render(){
         return(
             <>
-                <div className="course_header">Inside Main - Class Comp</div>
-                <div>Class Count = {this.state.count}</div>
-                <Button variant="primary" onClick={this.increaseCount}>Increase</Button>
-                <Button variant="primary" onClick={this.decreaseCount}>Decrease</Button>
-                <Circle/>
-                <Circle_Lift_State />
+            <Row>
+                <Col xs={12} className="bg-light">
+                    {/* <div className="course_header">Inside Main - Class Comp</div> */}
+                    <div>Class Count = {this.state.count}</div>
+                    <Button variant="primary" onClick={this.increaseCount}>Increase</Button>
+                    <Button variant="danger" onClick={this.decreaseCount}>Decrease</Button>
+                    <br></br><br></br>
+                    <Circle/>
+                    <br></br><br></br>
+                    <Circle_Lift_State />
+                </Col>
+            </Row>
             </>
         )
     }
