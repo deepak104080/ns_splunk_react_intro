@@ -8,6 +8,7 @@ import Fees from './Fees';
 import {Container} from 'react-bootstrap';
 import NotFound from './NotFound';
 import ClassCompDetail from './ClassCompDetail';
+import FunctionalEffect from './FunctionalEffect';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -29,6 +30,7 @@ function App() {
                         <Route path="/courses" element={<Fees />}/>
                         <Route path="/home" element={<Main companyName = {companyname}/>}/>
                         <Route path="/classcompdetail" element= {<ClassCompDetail />} />
+                        <Route path="/functionaleffect" element= {<FunctionalEffect />} />
                         <Route path="/" element={<Main companyName = {companyname}/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>

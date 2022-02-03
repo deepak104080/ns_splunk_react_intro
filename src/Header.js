@@ -19,10 +19,10 @@ const Header = (props) => {
                     <span></span>
                     <br/>
                     <div className="header-group">
-                        <Link className="header-menu" to="/home">Home</Link> {' '}
-                        <Link className="header-menu" to="/launchpad">Launchpad</Link>{' '}
-                        <Link className="header-menu" to="/fees">Fees</Link>{' '}
-                        <Link className="header-menu" to="/classcompdetail">Class Components</Link>{' '}
+                        <a className="header-menu" to="/home">Home</a> {' '}
+                        <a className="header-menu" to="/launchpad">Launchpad</a>{' '}
+                        <a className="header-menu" to="/fees">Fees</a>{' '}
+                        <a className="header-menu" to="/classcompdetail">Class Components</a>{' '}
                     </div>
                 </div> */}
 
@@ -41,6 +41,9 @@ const Header = (props) => {
                             </li>
                             <li className="nav-item">
                             <Link className="nav-link header-menu" to="/classcompdetail">Class Components</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link className="nav-link header-menu" to="/functionaleffect">Functional Effect</Link>
                             </li>
                             {/* <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -31,7 +31,7 @@ class ClassCompDetail extends React.Component  {
         console.log('Inside Component did update...');
     }
     componentWillUnmount() {
-        alert('Component is unmounting...');
+        // alert('Component is unmounting...');
         // debugger;
         // console.log('Inside Component will unmount ...');
     }
@@ -83,3 +83,7 @@ export default ClassCompDetail;
 // Error Handling
 // getDerivedStateFromError
 // componentDidCatch
+
+
+
+// PureComponent

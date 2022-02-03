@@ -6,6 +6,18 @@ https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 
 Images Link - https://picsum.photos/
+Gradient Link - https://gradienta.io/
+
+Lifecycle Methods - https://1.bp.blogspot.com/-eL2sbdeL9Qc/XdPR4RscrjI/AAAAAAAAVfc/zVXHv6vrPsswu5sZhGCYeOUAEZVGapSxgCLcBGAsYHQ/s1600/React-Components-Lifecycle.png
+Lifecycle Methods - https://media.geeksforgeeks.org/wp-content/uploads/lifecycle_reactjs.jpg
+
+
+React Practice Apps
+Weather App
+To Do App
+Calculator App
+EMI Calculator
+
 
 ## ############## REACT DOCUMENTATION ###########
 # Getting Started with Create React App

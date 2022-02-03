@@ -60,6 +60,8 @@ body {
   background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal; */
   background: linear-gradient(125deg, #FDFF9C 0%, #0500FF 100%), linear-gradient(180deg, #D3D3D3 0%, #161616 100%), linear-gradient(310deg, #00F0FF 0%, #00F0FF 20%, #0017E3 calc(20% + 1px), #0017E3 40%, #000F8F calc(40% + 1px), #000F8F 70%, #00073F calc(70% + 1px), #00073F 100%), linear-gradient(285deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%);
   background-blend-mode: overlay, overlay, exclusion, normal;
+  /* background: linear-gradient(180deg, #F7D6FF 0%, #005686 100%), linear-gradient(180deg, #FFFFFF 0%, #060046 100%), linear-gradient(130deg, #00FFA3 0%, #1A003C 100%), linear-gradient(307deg, #FF0000 0%, #3300C6 100%), radial-gradient(50% 72% at 50% 50%, #004584 0%, #00FFB2 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+  background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal; */
   min-height: 100vh;
   font-size: calc(10px + 1vmin);
   color: #383f47;
