@@ -45,6 +45,9 @@ const Header = (props) => {
                             <li className="nav-item">
                             <Link className="nav-link header-menu" to="/functionaleffect">Functional Effect</Link>
                             </li>
+                            <li className="nav-item">
+                            <Link className="nav-link header-menu" to="/form">Form</Link>
+                            </li>
                             {/* <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown link
