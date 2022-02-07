@@ -5,6 +5,7 @@ import Functional_Api_Effect from './Functional_Api_Effect';
 const FunctionalEffect = (props) => {
     const [flag, setFlag] = useState(false);
     const [count, setCount] = useState(1);
+    // const [ret, setRet] = useState(0);
 
     useEffect(() => {
         console.log('useEffect triggered...');
@@ -25,6 +26,21 @@ const FunctionalEffect = (props) => {
     useEffect(() => {
         console.log('useEffect triggered for count');
     }, [count]);
+
+    useEffect(() => {
+        console.log('useEffect for unmount triggered initially...');
+        let ret;
+        ret = setInterval(function() {
+            console.log('test123...');
+        }, 2000);
+        return()=> {
+            console.log('Functional component unmounted...');
+            clearInterval(ret);
+        }
+    }, []);
+
+    // setTimeout - clearTimeout
+    // setInterval - clearInterval
 
     const changeState = () => {
         setFlag(!flag);

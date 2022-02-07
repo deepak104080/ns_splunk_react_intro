@@ -10,6 +10,7 @@ import NotFound from './NotFound';
 import ClassCompDetail from './ClassCompDetail';
 import FunctionalEffect from './FunctionalEffect';
 import FormReg from './Form';
+import ToDo from './ToDo';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/classcompdetail" element= {<ClassCompDetail />} />
                         <Route path="/functionaleffect" element= {<FunctionalEffect />} />
                         <Route path="/form" element= {<FormReg />} />
+                        <Route path="/todo" element= {<ToDo />} />
                         <Route path="/" element={<Main companyName = {companyname}/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>

@@ -12,6 +12,9 @@ Lifecycle Methods - https://1.bp.blogspot.com/-eL2sbdeL9Qc/XdPR4RscrjI/AAAAAAAAV
 Lifecycle Methods - https://media.geeksforgeeks.org/wp-content/uploads/lifecycle_reactjs.jpg
 
 
+Formic Library - https://formik.org/docs/overview
+
+
 React Practice Apps
 Weather App
 To Do App
