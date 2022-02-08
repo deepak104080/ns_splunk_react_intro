@@ -13,6 +13,8 @@ Lifecycle Methods - https://media.geeksforgeeks.org/wp-content/uploads/lifecycle
 
 
 Formic Library - https://formik.org/docs/overview
+React Icons - https://react-icons.github.io/react-icons
+
 
 
 React Practice Apps

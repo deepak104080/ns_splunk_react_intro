@@ -1,5 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import { Row, Col } from 'react-bootstrap';
+import CompType from './CompType';
 
 const Fees = () => {
 
@@ -10,11 +11,7 @@ const Fees = () => {
                 Course Fees
             </Col>
             </Row>
-            <Row>
-                <Col xs={12} className="bg-info border-bottom">
-                    This is a functional component.
-                </Col>
-            </Row>
+            <CompType type="functional"/>
         </>
     )
 }

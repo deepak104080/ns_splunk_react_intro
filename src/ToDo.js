@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
 import {nanoid} from 'nanoid';
+import { FaBeer } from 'react-icons/fa';
 
 const ToDo = () => {
     const [toDoItem, setToDoItem] = useState('');
@@ -63,21 +64,25 @@ const ToDo = () => {
                     Add
                 </Button>
             </Form>
-
+            
             <br></br>
             <br></br>
             {toDoList && toDoList.map((item) => (
                 <div className={item.donestatus ? 'bg-success border-bottom todolist' : 'bg-info border-bottom todolist'}>
                     {item.todotext}
                     <button className="bg-success" onClick={() => markComplete(item.id)}>Done</button>
-                    <button classname="bg-danger" onClick={() => markDelete(item.id)}>Delete</button>
+                    <button classname="bg-danger" onClick={() => markDelete(item.id)}>Delete <FaBeer /></button>
+                    {/* https://repository-images.githubusercontent.com/315986811/d74b3080-2f6a-11eb-960e-c405ce8cfc43
+                    state && editpanel
+                    textarea and save Button
+                    fn saveToDo (id, newtext) */}
                 </div>
             ))}
 
             <br></br>
             <br></br>
             </Col>
-            </Row>
+        </Row>
         </>
     )
 }

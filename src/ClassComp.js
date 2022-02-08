@@ -3,6 +3,7 @@ import React from 'react';
 import {Button, Row, Col} from 'react-bootstrap';
 import Circle from './Circle';
 import Circle_Lift_State from './Circle_Lift_State';
+import CompType from './CompType';
 
 class ClassComp extends React.Component {
     constructor() {

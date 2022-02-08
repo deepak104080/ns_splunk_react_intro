@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
+import CompType from './CompType';
 
 class ClassCompDetail extends React.Component  {
     constructor() {
@@ -48,11 +49,7 @@ class ClassCompDetail extends React.Component  {
                     {/* <h1>{abc}</h1> */}
                 </Col>
             </Row>
-            <Row>
-                <Col xs={12} className="bg-info border-bottom">
-                    This is a class component.
-                </Col>
-            </Row>
+            <CompType type="class"/>
             </>
         );
     }

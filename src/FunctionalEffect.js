@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Row, Col, Button} from 'react-bootstrap';
 import Functional_Api_Effect from './Functional_Api_Effect';
+import CompType from './CompType';
 
 const FunctionalEffect = (props) => {
     const [flag, setFlag] = useState(false);
@@ -64,11 +65,7 @@ const FunctionalEffect = (props) => {
                     <br></br>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    This is a functional component.
-                </Col>
-            </Row>
+            <CompType type="functional"/>
         </>
     )
 }

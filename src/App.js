@@ -11,6 +11,8 @@ import ClassCompDetail from './ClassCompDetail';
 import FunctionalEffect from './FunctionalEffect';
 import FormReg from './Form';
 import ToDo from './ToDo';
+import Comp1 from './Comp1';
+import Comp2 from './Comp2';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,6 +37,8 @@ function App() {
                         <Route path="/functionaleffect" element= {<FunctionalEffect />} />
                         <Route path="/form" element= {<FormReg />} />
                         <Route path="/todo" element= {<ToDo />} />
+                        <Route path="/hoc1" element= {<Comp1 />} />
+                        <Route path="/hoc2" element= {<Comp2 />} />
                         <Route path="/" element={<Main companyName = {companyname}/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
