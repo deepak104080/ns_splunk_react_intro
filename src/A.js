@@ -1,19 +1,20 @@
 import React, {Fragment, useState} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import CompType from './CompType';
+import Bchild from './B';
 
-const Fees = () => {
+const Achild = () => {
 
     return (
         <>
-           <Row>
-            <Col xs={12} className="bg-light">
-                Course Fees
+           <Row className="mx-2 my-2">
+            <Col xs={12} className="bg-warning">
+                Component A
+                <Bchild/>
             </Col>
             </Row>
-            <CompType type="functional"/>
         </>
     )
 }
 
-export default Fees;
+export default Achild;

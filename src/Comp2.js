@@ -12,11 +12,13 @@ class Comp2 extends React.Component {
         return(
             <>
                 {/* <div>This is a class component - comp 2. - {this.props.hocVar1}</div> */}
+                <br></br>
                 {
                     this.props.dataRet && this.props.dataRet.map((item) => (
                         <div>{item}</div>
                     ))
                 }
+                <br></br>
             </>
         )
     }

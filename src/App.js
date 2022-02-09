@@ -3,8 +3,8 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
-import Launchpad from './Launchpad';
-import Fees from './Fees';
+import About from './About';
+import Courses from './Courses';
 import {Container} from 'react-bootstrap';
 import NotFound from './NotFound';
 import ClassCompDetail from './ClassCompDetail';
@@ -15,6 +15,7 @@ import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import DataApp from './DataApp';
 
 function App() {
     const menu1 = 'Home';
@@ -24,14 +25,15 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App" >
+                <DataApp>
                 <Container className="app-container bg-light">
                 {/* <div className="container bg-info"> */}
                 {/* </div> */}
                     <Header menuitem1={menu1} menuitem2={menu2} menuitem3={menu3}/>
 
                     <Routes>
-                        <Route path="/about" element={<Launchpad />}/>
-                        <Route path="/courses" element={<Fees />}/>
+                        <Route path="/about" element={<About />}/>
+                        <Route path="/courses" element={<Courses />}/>
                         <Route path="/home" element={<Main companyName = {companyname}/>}/>
                         <Route path="/classcompdetail" element= {<ClassCompDetail />} />
                         <Route path="/functionaleffect" element= {<FunctionalEffect />} />
@@ -45,6 +47,7 @@ function App() {
 
                     <Footer/>
                 </Container>
+                </DataApp>
             </div>
         </BrowserRouter>
     );

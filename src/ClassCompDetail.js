@@ -43,9 +43,12 @@ class ClassCompDetail extends React.Component  {
             <>
             <Row>
                 <Col xs={12} className="bg-light">
-                    <p>This is a class component.</p>
+                    <br></br>
+                    <p>This is a class component - Implementation of lifecycle methods - check console</p>
                     <button onClick={this.updateCount}>Update Count</button>
                     <button onClick={this.deletecomp}>Delete comp</button>
+                    <br></br>
+                    <br></br>
                     {/* <h1>{abc}</h1> */}
                 </Col>
             </Row>

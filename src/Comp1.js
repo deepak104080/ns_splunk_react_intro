@@ -20,11 +20,13 @@ class Comp1 extends React.Component {
                         <div>{item}</div>
                     ))
                 } */}
+                <br></br>
                 {
                     this.props.dataRet && this.props.dataRet.map((item) => (
                         <div>{item}</div>
                     ))
                 }
+                <br></br>
             </>
         )
     }

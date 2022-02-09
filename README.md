@@ -15,6 +15,7 @@ Lifecycle Methods - https://media.geeksforgeeks.org/wp-content/uploads/lifecycle
 Formic Library - https://formik.org/docs/overview
 React Icons - https://react-icons.github.io/react-icons
 
+Context API Diagram - https://www.carlrippon.com/static/0d1f722d0fe4c2bc4c3d71595dbe67dd/ca682/prop-drilling-v-context.png
 
 
 React Practice Apps

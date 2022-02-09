@@ -1,9 +1,11 @@
 import { Button } from 'bootstrap';
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import { Row, Col } from 'react-bootstrap';
+import {DataAppContext} from './DataApp';
 
 const ApiFunction = (props) => {
     const [apiData, setApiData] = useState([]);
+    const tempVal = useContext(DataAppContext);
 
     const callApi = () => {
         fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
@@ -26,7 +28,13 @@ const ApiFunction = (props) => {
             <Col xs={12}>
                 {/* <Button variant="primary">Call API</Button> */}
                 <br></br>
+                <div>Implementation of App Level Data - Context API</div>
+                <div>Account Balance - {tempVal.accountbalance}</div>
+                <br></br>
+                <div>-------------------------</div>
+                <br></br>
                 <button className="btn btn-primary" onClick={callApi}>Call API</button>
+                
                 <br></br>
                 <br></br>
                 <ul className="font-12">

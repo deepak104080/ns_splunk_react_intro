@@ -41,17 +41,12 @@ const withHoc = (InputComponent, data) => {
         }
         render() {
 
-
-
             return(
                 <>
-
+                <br></br>
                 <input type="text" value={this.state.tempinput} onChange = {(e) => this.filterFn(e)}/>
                 <InputComponent hocVar1="text1" dataRet={this.state.datalist} />
                 {/* <div>This is HOC file.</div> */}
-
-
-
 
                 </>
             )
