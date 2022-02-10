@@ -1,10 +1,12 @@
-import React, {Fragment, useState, useContext} from 'react';
+import React, {Fragment, useState, useContext, useEffect} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import CompType from './CompType';
 import {DataAppContext} from './DataApp';
 
 const Courses = () => {
     const tempVal = useContext(DataAppContext);
+    console.log('... Courses Page ...');
+
     return (
         <>
            <Row>

@@ -14,6 +14,7 @@ import ToDo from './ToDo';
 import ToDoAssg from './ToDoAssg';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
+import GitHubIssues from './GitHubIssues';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import DataApp from './DataApp';
@@ -27,28 +28,28 @@ function App() {
         <BrowserRouter>
             <div className="App" >
                 <DataApp>
-                <Container className="app-container bg-light">
-                {/* <div className="container bg-info"> */}
-                {/* </div> */}
-                    <Header menuitem1={menu1} menuitem2={menu2} menuitem3={menu3}/>
+                    <Container className="app-container bg-light">
+                        <Header menuitem1={menu1} menuitem2={menu2} menuitem3={menu3}/>
 
-                    <Routes>
-                        <Route path="/about" element={<About />}/>
-                        <Route path="/courses" element={<Courses />}/>
-                        <Route path="/home" element={<Main companyName = {companyname}/>}/>
-                        <Route path="/classcompdetail" element= {<ClassCompDetail />} />
-                        <Route path="/functionaleffect" element= {<FunctionalEffect />} />
-                        <Route path="/form" element= {<FormReg />} />
-                        <Route path="/todo" element= {<ToDo />} />
-                        <Route path="/todoassg" element= {<ToDoAssg />} />
-                        <Route path="/hoc1" element= {<Comp1 />} />
-                        <Route path="/hoc2" element= {<Comp2 />} />
-                        <Route path="/" element={<Main companyName = {companyname}/>}/>
-                        <Route path="*" element={<NotFound/>}/>
-                    </Routes>
+                        <Routes>
+                            <Route path="/about" element={<About />}/>
+                            <Route path="/about/:param1" element={<About />}/>
+                            <Route path="/github/:pagenum" element={<GitHubIssues />}/>
+                            <Route path="/courses" element={<Courses />}/>
+                            <Route path="/home" element={<Main companyName = {companyname}/>}/>
+                            <Route path="/classcompdetail" element= {<ClassCompDetail />} />
+                            <Route path="/functionaleffect" element= {<FunctionalEffect />} />
+                            <Route path="/form" element= {<FormReg />} />
+                            <Route path="/todo" element= {<ToDo />} />
+                            <Route path="/todoassg" element= {<ToDoAssg />} />
+                            <Route path="/hoc1" element= {<Comp1 />} />
+                            <Route path="/hoc2" element= {<Comp2 />} />
+                            <Route path="/" element={<Main companyName = {companyname}/>}/>
+                            <Route path="*" element={<NotFound/>}/>
+                        </Routes>
 
-                    <Footer/>
-                </Container>
+                        <Footer/>
+                    </Container>
                 </DataApp>
             </div>
         </BrowserRouter>

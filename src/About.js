@@ -1,17 +1,24 @@
-import React, {Fragment, useState, createContext} from 'react';
+import React, {Fragment, useState, createContext, useContext, useEffect} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import CompType from './CompType';
 import Achild from './A';
+import {DataAppContext} from './DataApp';
+import {useParams} from 'react-router-dom';
 
 const DataContext = createContext();
 
 const About = () => {
+    const tempVal = useContext(DataAppContext);
     let name = 'Mr. ABC';
+    console.log('... About Page...');
+    let param = useParams();
+    console.log('param - ', param);
     return (
         <>
            <Row>
             <Col xs={12} className="bg-light">
-                About Page - Implementation of Context to child elements
+                <div>About Page - Implementation of Context to child elements</div>
+                <div>Account Balance - {tempVal.accountbalance}</div>
                 
             </Col>
             <Col xs={12} className="bg-light">

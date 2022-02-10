@@ -22,3 +22,8 @@ const DataApp = (props) => {
 export default DataApp;
 
 export {DataAppContext};
+
+
+// useMemo
+// Break into multiple components
+// Redux

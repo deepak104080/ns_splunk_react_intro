@@ -1,11 +1,12 @@
 import { Button } from 'bootstrap';
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import {DataAppContext} from './DataApp';
 
 const ApiFunction = (props) => {
     const [apiData, setApiData] = useState([]);
     const tempVal = useContext(DataAppContext);
+    console.log('... Home Page - APi Function ...');
 
     const callApi = () => {
         fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
