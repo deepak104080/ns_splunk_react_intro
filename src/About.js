@@ -19,6 +19,7 @@ const About = () => {
             <Col xs={12} className="bg-light">
                 <div>About Page - Implementation of Context to child elements</div>
                 <div>Account Balance - {tempVal.accountbalance}</div>
+                <button onClick={tempVal.updateBalance}>Increase balance by 1</button>
                 
             </Col>
             <Col xs={12} className="bg-light">

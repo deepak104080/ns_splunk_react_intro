@@ -60,6 +60,9 @@ const Header = (props) => {
                             <li className="nav-item">
                             <Link className="nav-link header-menu" to="/hoc2">HOC 2</Link>
                             </li>
+                            <li className="nav-item">
+                            <Link className="nav-link header-menu" to="/github/1">GitHub</Link>
+                            </li>
                             {/* <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown link

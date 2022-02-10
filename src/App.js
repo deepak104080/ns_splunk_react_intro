@@ -47,7 +47,6 @@ function App() {
                             <Route path="/" element={<Main companyName = {companyname}/>}/>
                             <Route path="*" element={<NotFound/>}/>
                         </Routes>
-
                         <Footer/>
                     </Container>
                 </DataApp>

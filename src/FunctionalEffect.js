@@ -56,7 +56,10 @@ const FunctionalEffect = (props) => {
                 <Col>
                 <br></br>
                     <Button variant="info" onClick={changeState}>Click here to set flag - Check Console</Button>
-                    <br></br>
+                </Col>
+            </Row>
+            <Row className="bg-warning">
+                <Col>
                     <br></br>
                     <Button variant="success" onClick={changeState2}>Call Next Issues</Button>
                     <br></br>
