@@ -11,6 +11,7 @@ import ClassCompDetail from './ClassCompDetail';
 import FunctionalEffect from './FunctionalEffect';
 import FormReg from './Form';
 import ToDo from './ToDo';
+import ToDoAssg from './ToDoAssg';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 import './css/App.css';
@@ -39,6 +40,7 @@ function App() {
                         <Route path="/functionaleffect" element= {<FunctionalEffect />} />
                         <Route path="/form" element= {<FormReg />} />
                         <Route path="/todo" element= {<ToDo />} />
+                        <Route path="/todoassg" element= {<ToDoAssg />} />
                         <Route path="/hoc1" element= {<Comp1 />} />
                         <Route path="/hoc2" element= {<Comp2 />} />
                         <Route path="/" element={<Main companyName = {companyname}/>}/>

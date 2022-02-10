@@ -1,7 +1,8 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
 import {nanoid} from 'nanoid';
 import { FaBeer } from 'react-icons/fa';
+import { AiFillEdit, AiOutlineDelete } from "react-icons/ai";
 
 const ToDo = () => {
     const [toDoItem, setToDoItem] = useState('');
@@ -15,12 +16,14 @@ const ToDo = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let obj={};
-        obj.id = nanoid();
-        obj.todotext = toDoItem;
-        obj.donestatus = false;
-        setToDoList([...toDoList, obj]);
-        setToDoItem('');
+        if(toDoItem !== '') {
+            let obj={};
+            obj.id = nanoid();
+            obj.todotext = toDoItem;
+            obj.donestatus = false;
+            setToDoList([...toDoList, obj]);
+            setToDoItem('');
+        }
     }
 
     useEffect(() => {
@@ -55,7 +58,7 @@ const ToDo = () => {
                 <br></br>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Enter a new to do</Form.Label>
+                    <Form.Label>To Do App</Form.Label>
                     <Form.Control type="text" name="username" value={toDoItem} placeholder="Enter a new to do" onChange={handleChange} />
                 </Form.Group>
 
@@ -68,10 +71,21 @@ const ToDo = () => {
             <br></br>
             <br></br>
             {toDoList && toDoList.map((item) => (
-                <div className={item.donestatus ? 'bg-success border-bottom todolist' : 'bg-info border-bottom todolist'}>
-                    {item.todotext}
-                    <button className="bg-success" onClick={() => markComplete(item.id)}>Done</button>
-                    <button classname="bg-danger" onClick={() => markDelete(item.id)}>Delete <FaBeer /></button>
+                <div className={item.donestatus ? 'bg-success' : 'bg-info'}>
+                    
+                    <Row className="py-2 my-2 mx-2">
+                        <Col xs={8} className="bg-light text-start">
+                            <div>{item.todotext}</div>
+                        </Col>
+                        <Col xs={2} className="center">
+                            <button className="btn btn-success" onClick={() => markComplete(item.id)}>Done <AiFillEdit /></button>
+                        </Col>
+                        <Col xs={2} className="center">
+                            <button className="btn btn-danger" onClick={() => markDelete(item.id)}>Delete <AiOutlineDelete/> </button>
+                        </Col>
+                    </Row>
+                    
+                    
                     {/* https://repository-images.githubusercontent.com/315986811/d74b3080-2f6a-11eb-960e-c405ce8cfc43
                     state && editpanel
                     textarea and save Button
