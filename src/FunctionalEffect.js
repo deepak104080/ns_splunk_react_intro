@@ -47,7 +47,8 @@ const FunctionalEffect = (props) => {
         setFlag(!flag);
     }
     const changeState2 = () => {
-        setCount(count => count+1);
+        setCount(count => count+1); //async mode
+        // console.log(count); //old value
     }
 
     return (

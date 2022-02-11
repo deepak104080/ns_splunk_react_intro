@@ -12,7 +12,7 @@ const GitHub = () => {
             {pages && pages.map((item) => {
                 var temp = '/github/'+item;
                 return(
-                    <Link className="nav-link git-links" to={temp}>Page {item}</Link>
+                    <Link className="git-links" to={temp}>Page {item}</Link>
                 )
             })}
         </>

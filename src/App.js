@@ -15,6 +15,7 @@ import ToDoAssg from './ToDoAssg';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 import GitHubIssues from './GitHubIssues';
+import RefClass from './RefClass';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import DataApp from './DataApp';
@@ -44,6 +45,7 @@ function App() {
                             <Route path="/todoassg" element= {<ToDoAssg />} />
                             <Route path="/hoc1" element= {<Comp1 />} />
                             <Route path="/hoc2" element= {<Comp2 />} />
+                            <Route path="/ref" element= {<RefClass />} />
                             <Route path="/" element={<Main companyName = {companyname}/>}/>
                             <Route path="*" element={<NotFound/>}/>
                         </Routes>
