@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import RefChild from './RefChild';
 
 class RefClass extends Component {
     constructor(){
@@ -6,6 +7,7 @@ class RefClass extends Component {
         this.inputRef = React.createRef();
         this.inputRef2 = React.createRef();
         this.divRef3 = React.createRef();
+        this.childRef = React.createRef();
     }
 
     componentDidMount() {
@@ -22,6 +24,9 @@ class RefClass extends Component {
         console.log('Data submitted - ', this.inputRef2.current.value);
         //api call - to verify login
     }
+    sendDataToChild = () => {
+        this.childRef.current.value = 'My name is xyz.';
+    }
     
     render() {
         return(
@@ -35,6 +40,12 @@ class RefClass extends Component {
                 {/* <input id="" type="text" /> */}
                 <div ref={this.divRef3}>I work at Newton School.</div>
                 <br></br>
+
+
+                <br></br>
+                <div>------------------------</div>
+                <button onClick={this.sendDataToChild}>Click here to send data to Ref Child.</button>
+                <RefChild ref={this.childRef}/>
             </>
         )
     }
