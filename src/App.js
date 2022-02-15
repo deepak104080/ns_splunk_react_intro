@@ -48,10 +48,11 @@ function App() {
                             <Route path="/hoc2" element= {<Comp2 />} />
                             <Route path="/ref" element= {<RefClass />} />
                             <Route path="/ref2" element= {<RefState />} />
-                            {/* <Route path="assg" element= {<Main companyName = {companyname}/>} >
+                            <Route path="/assg" element= {<Main companyName = {companyname}/>} />
+                            <Route path="assg">
                                 <Route path="todo1" element= {<ToDo />} />
                                 <Route path="todo2" element= {<ToDoAssg />} />
-                            </Route> */}
+                            </Route>
                             <Route path="/" element={<Main companyName = {companyname}/>}/>
                             <Route path="*" element={<NotFound/>}/>
                         </Routes>
