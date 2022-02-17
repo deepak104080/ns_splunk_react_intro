@@ -79,13 +79,16 @@ useEffect(() => {
 
   return (
     <div id="main">
+      <br></br>
       <h2>{worktime}</h2>
-      <h4>Work/Time Heading</h4>
+      <h4>Work/Break Heading</h4>
+      <br></br>
       <div>
         <button onClick={startTimer}>Start</button>
         <button onClick={stopTimer}>Stop</button>
         <button onClick={resetTimer}>Reset</button>
       </div>
+      <br></br>
       <div>
         <form onSubmit={setTimers}>
           <input type="number" name="tempworktime" value={tempworktime !== 0 ? tempworktime : worktime} onChange={handleChange1} placeholder="work duration" />
@@ -93,7 +96,7 @@ useEffect(() => {
           <button type="submit">Set</button>
         </form>
       </div>
-
+      <br></br>
     </div>
   )
 }

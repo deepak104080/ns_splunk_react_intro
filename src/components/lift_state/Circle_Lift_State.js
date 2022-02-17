@@ -14,7 +14,7 @@ const Circle_Lift_State = () => {
     return (
         <>
         <Row>
-                <Col xs={12} className="bg-info">
+                <Col xs={12} className="bg-success">
            <Childcircle1 radiusVal={radius} getRadius={printRadius}/>
            <Childcircle2 radiusVal={radius} getRadius={printRadius}/>
            <Childcircle3 radiusVal={radius} getRadius={printRadius}/>

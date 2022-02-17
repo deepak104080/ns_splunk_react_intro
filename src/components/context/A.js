@@ -1,6 +1,5 @@
 import React, {Fragment, useState} from 'react';
 import { Row, Col } from 'react-bootstrap';
-import CompType from './CompType';
 import Bchild from './B';
 
 const Achild = () => {

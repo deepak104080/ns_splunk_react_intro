@@ -1,6 +1,5 @@
 import React, {Fragment, useContext, useState} from 'react';
 import { Row, Col } from 'react-bootstrap';
-import CompType from './CompType';
 import Cchild from './C';
 import {DataContext} from './About';
 

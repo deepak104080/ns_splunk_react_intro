@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
-import About from './About';
+import About from './components/context/About';
 import Courses from './Courses';
 import {Container} from 'react-bootstrap';
 import NotFound from './NotFound';
@@ -26,7 +26,7 @@ import DataApp from './DataApp';
 function App() {
     const menu1 = 'Home';
     const menu2 = 'About';
-    const menu3 = 'Courses';
+    const menu3 = 'Course';
     const companyname = 'Newton School';
     return (
         <BrowserRouter>

@@ -1,8 +1,8 @@
 import React, {Fragment, useState, createContext, useContext, useEffect} from 'react';
 import { Row, Col } from 'react-bootstrap';
-import CompType from './CompType';
+import CompType from './../../CompType';
 import Achild from './A';
-import {DataAppContext} from './DataApp';
+import {DataAppContext} from './../../DataApp';
 import {useParams} from 'react-router-dom';
 
 const DataContext = createContext();
