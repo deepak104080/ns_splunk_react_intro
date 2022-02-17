@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {Button, Row, Col} from 'react-bootstrap';
 import Circle from './Circle';
-import Circle_Lift_State from './Circle_Lift_State';
+import Circle_Lift_State from './components/lift_state/Circle_Lift_State';
 import CompType from './CompType';
 
 class ClassComp extends Component {
@@ -52,7 +52,7 @@ class ClassComp extends Component {
         return(
             <>
             <Row>
-                <Col xs={12} className="bg-light">
+                <Col xs={12} className="bg-warning">
                     {/* <div className="course_header">Inside Main - Class Comp</div> */}
                     <div>Class Count = {this.state.count}</div>
                     <Button variant="primary" onClick={this.increaseCount}>Increase</Button>

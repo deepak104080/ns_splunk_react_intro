@@ -30,6 +30,9 @@ const Header = (props) => {
                     <div className="container-fluid">
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link header-menu" to="/assgpomodoro">Pomodoro</Link>
+                            </li>
                             <li className="nav-item">
                             <Link className="nav-link active header-menu" aria-current="page" to="/home">{menuitem1}</Link>
                             </li>
@@ -75,6 +78,11 @@ const Header = (props) => {
                             <li className="nav-item">
                             <Link className="nav-link header-menu" to="/assg/todo2">To Do 2</Link>
                             </li>
+                            <li className="nav-item">
+                            <Link className="nav-link header-menu" to="/hookreducer">Hook Reducer</Link>
+                            </li>
+                            
+                            
                             {/* <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Dropdown link

@@ -32,26 +32,28 @@ function ToDoAssg() {
 
   const handleSubmitEdit = (e) => {
     e.preventDefault();
-    let updatedList;
+    
     if(toDoItemEdit !== '') {
+      let updatedList;
         updatedList = toDoList.map((item) => {
             if (item.id === editStatus) {
               item.todotext = toDoItemEdit;
             }
             return item;
           });
+          setToDoList(updatedList);
+          setToDoItemEdit("");
+          setEditStatus("");
     }
-    else {
-        updatedList = toDoList.map((item) => {
-            if (item.id === editStatus) {
-              item.todotext = editText;
-            }
-            return item;
-          });
-    }
-    setToDoList(updatedList);
-    setToDoItemEdit("");
-    setEditStatus("");
+    // else {
+    //     updatedList = toDoList.map((item) => {
+    //         if (item.id === editStatus) {
+    //           item.todotext = editText;
+    //         }
+    //         return item;
+    //       });
+    // }
+    
   };
 
   useEffect(() => {
@@ -88,7 +90,6 @@ function ToDoAssg() {
         <textarea
           id="task"
           value={toDoItem}
-          placeholder="Enter a new to do"
           onChange={handleChange}
         />
         <br></br>

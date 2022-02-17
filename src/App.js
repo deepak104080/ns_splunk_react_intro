@@ -17,6 +17,8 @@ import Comp2 from './Comp2';
 import GitHubIssues from './GitHubIssues';
 import RefClass from './RefClass';
 import RefState from './RefState';
+import HookReducer from './components/hooks/HookReducer';
+import AssgPomodoro from './components/assignments/AssgPomodoro';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import DataApp from './DataApp';
@@ -53,6 +55,8 @@ function App() {
                                 <Route path="todo1" element= {<ToDo />} />
                                 <Route path="todo2" element= {<ToDoAssg />} />
                             </Route>
+                            <Route path="/hookreducer" element= {<HookReducer />} />
+                            <Route path="/assgpomodoro" element= {<AssgPomodoro />} />
                             <Route path="/" element={<Main companyName = {companyname}/>}/>
                             <Route path="*" element={<NotFound/>}/>
                         </Routes>

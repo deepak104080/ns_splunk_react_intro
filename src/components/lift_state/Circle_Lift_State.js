@@ -1,4 +1,5 @@
 import React, {Fragment, useState} from 'react';
+import {Row, Col} from 'react-bootstrap';
 import Childcircle1 from './Childcircle1';
 import Childcircle2 from './Childcircle2';
 import Childcircle3 from './Childcircle3';
@@ -12,10 +13,14 @@ const Circle_Lift_State = () => {
     }
     return (
         <>
+        <Row>
+                <Col xs={12} className="bg-info">
            <Childcircle1 radiusVal={radius} getRadius={printRadius}/>
            <Childcircle2 radiusVal={radius} getRadius={printRadius}/>
            <Childcircle3 radiusVal={radius} getRadius={printRadius}/>
            <Childcircle4 radiusVal={radius} getRadius={printRadius}/>
+           </Col>
+        </Row>
         </>
     )
 }

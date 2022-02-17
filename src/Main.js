@@ -13,7 +13,7 @@ const Main = (props) => {
             <Col xs={4} className="bg-light">
                 <FunctionalComp/>
             </Col>
-            <Col xs={4} className="bg-light border-end border-start">
+            <Col xs={4} className="bg-warning border-end border-start">
                 <ClassComp />
             </Col>
             <Col xs={4} className="bg-light">
