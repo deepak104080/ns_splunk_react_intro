@@ -20,6 +20,16 @@ Context API Diagram - https://www.carlrippon.com/static/0d1f722d0fe4c2bc4c3d7159
 
 Context API Assignment - Theme Switch Feature
 
+-------------------------------------------
+Redux - https://d33wubrfki0l68.cloudfront.net/01cc198232551a7e180f4e9e327b5ab22d9d14e7/b33f4/assets/images/reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif
+
+https://res.cloudinary.com/practicaldev/image/fetch/s--m5BdPzhS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.imgur.com/riadAin.gif
+
+Why Redux
+Parts - Action, Reducer, Store
+
+-------------------------------------------------
+
 React Practice Apps
 Weather App
 To Do App
