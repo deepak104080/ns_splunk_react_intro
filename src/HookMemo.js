@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useCallback, useRef, useReducer } from 'react';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import HookCallBack from './HookCallBack';
 
 const HookMemo = () => {

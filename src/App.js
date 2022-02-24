@@ -19,6 +19,7 @@ import RefClass from './RefClass';
 import RefState from './RefState';
 import HookReducer from './components/hooks/HookReducer';
 import HookMemo from './HookMemo';
+import HookMisc from './HookMisc';
 import AssgPomodoro from './components/assignments/AssgPomodoro';
 import './css/App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -58,6 +59,7 @@ function App() {
                             </Route>
                             <Route path="/hookreducer" element= {<HookReducer />} />
                             <Route path="/hookmemo" element= {<HookMemo />} />
+                            <Route path="/hookmisc" element= {<HookMisc />} />
                             <Route path="/assgpomodoro" element= {<AssgPomodoro />} />
                             <Route path="/" element={<Main companyName = {companyname}/>}/>
                             <Route path="*" element={<NotFound/>}/>

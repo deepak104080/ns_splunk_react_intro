@@ -52,7 +52,8 @@ const Header = (props) => {
         </NavDropdown>
         <NavDropdown title="Hooks" id="basic-nav-dropdown">
           <NavDropdown.Item><Link className="nav-link header-menu" to="/hookreducer">Hook Reducer</Link></NavDropdown.Item>
-          <NavDropdown.Item><Link className="nav-link header-menu" to="/hookmemo">Hook Memo</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="nav-link header-menu" to="/hookmemo">Hook Memo-Callback</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="nav-link header-menu" to="/hookmisc">Hook Misc</Link></NavDropdown.Item>
           </NavDropdown>
         <NavDropdown title="To Do" id="basic-nav-dropdown">
           <NavDropdown.Item><Link className="nav-link header-menu" to="/assg/todo1">To Do 1</Link></NavDropdown.Item>
