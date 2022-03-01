@@ -37,6 +37,17 @@ Calculator App
 EMI Calculator
 
 
+
+# ############################################
+Other Repos :-
+JS - https://github.com/deepak104080/ns_splunk_javascript
+React Basics - https://github.com/deepak104080/ns_splunk_react_intro
+Node Basics - https://github.com/deepak104080/node_basics
+Online Exam - https://github.com/deepak104080/online_exam
+Online Exam Back End - 
+
+# ############################################
+
 ## ############## REACT DOCUMENTATION ###########
 # Getting Started with Create React App
 
