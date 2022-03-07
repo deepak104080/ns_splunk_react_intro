@@ -11,7 +11,6 @@ const withHoc = (InputComponent, data) => {
             }
         }
 
-
         filterFn = (e) => {
             console.log(e.target.value);
             // this.setState({
