@@ -1,0 +1,11 @@
+$redColor: #ff0000;
+$blueColor: #0000ff;
+$greyColor: #555555;
+
+@mixin buttonStyle($color, $fontSize) {
+    border: 1px solid #ff0000;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $color;
+    font-size: $fontSize;
+}

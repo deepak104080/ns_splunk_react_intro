@@ -1,0 +1,17 @@
+$blackColor: #000000;
+@import './variables.scss';
+
+.test_div {
+    color: red;
+    p {
+        font-size: 26px;
+        background-color: $blackColor;
+    }
+    h1 {
+        color: $blueColor;
+        background-color: $redColor;
+    }
+    button {
+        @include buttonStyle(#ffff00, 26px);
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import CompType from './CompType';
+import './css/test.scss';
 
 class ClassCompDetail extends React.Component  {
     constructor() {
@@ -50,6 +51,11 @@ class ClassCompDetail extends React.Component  {
                     <br></br>
                     <br></br>
                     {/* <h1>{abc}</h1> */}
+                    <div className='test_div'>
+                        <p>Test div for scss.</p>
+                        <h1>test h1</h1>
+                        <button>Button</button>
+                    </div>
                 </Col>
             </Row>
             <CompType type="class"/>
